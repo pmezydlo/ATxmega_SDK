@@ -21,7 +21,12 @@ DEVICE     = atxmega128a1
 DEVICE2     = x128a1
 CLOCK      = 32000000
 PROGRAMMER = -c avrispmkII
-OBJECTS    = main.o usart.o debug.o ebi.o clk.o
+OBJECTS    = main.o
+OBJECTS    += Library/Usart/usart.o
+OBJECTS    += Library/Debug/debug.o
+OBJECTS    += Library/Ebi/ebi.o
+OBJECTS    += Library/Clk/clk.o
+
 #FUSES      = -U lfuse:w:0x5e:m -U hfuse:w:0x91:m -U efuse:w:0xf3:m
 PORT		= usb
 

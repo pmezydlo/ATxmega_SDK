@@ -1,7 +1,7 @@
-#include "usart.h"
-#include "ebi.h"
-#include "clk.h"
-#include "debug.h"
+#include "Library/Usart/usart.h"
+#include "Library/Ebi/ebi.h"
+#include "Library/Clk/clk.h"
+#include "Library/Debug/debug.h"
 
 #include <util/delay.h>
 
