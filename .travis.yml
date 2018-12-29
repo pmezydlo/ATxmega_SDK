@@ -1,0 +1,15 @@
+language: c
+compiler: gcc
+dist: trusty
+
+before_install:
+
+install:
+    apt-get install gcc-avr avr-libc
+
+before_script:
+
+script:
+    make
+
+
