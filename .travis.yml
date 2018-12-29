@@ -1,15 +1,7 @@
 language: c
-compiler: gcc
-dist: trusty
 
 before_install:
-
+  - sudo apt-get update -qq
 install:
-    apt-get install gcc-avr avr-libc
-
-before_script:
-
-script:
-    make
-
-
+  - sudo apt-get install -qq gcc-avr avr-libc
+script: make
